@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Reserva de sociedad</h1>
+    <p>Rellena el siguiente formulario para reservar.....</p>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos del usuario</legend>
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre"><br>
+            <label>Eres socio?</label>
+            <br>
+            <input type="radio" name="socio" id="si" value="S">
+            <label for="si">Si, soy socio</label>
+            <input type="radio" name="socio" id="no" value="N">
+            <label for="no">No soy socio</label>
+            <br>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="pass">Contraseña:</label>
+            <input type="password" name="pass" id="pass"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="edad">Edad:</label>
+            <select id="edad" name="edad">
+                <option selected>menor de 18</option>
+                <option>entre 18 y 65</option>
+                <option>mayor de 65</option>
+            </select>
+            <br>
+            <label for="fecha">Selecciona la fecha y hora de reserva:</label>
+            <br>
+            <input type="date" name="fecha" id="fecha">
+            <input type="time" name="hora" id="hora">
+            <br>
+            <textarea name="comentario" cols="50" rows=10>Comentarios</textarea>
+        </fieldset>
+        <input type="checkbox" name="condicion" id="condicion"><label for="condicion">Acepto las condiciones</label>
+        <br>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+
+</html>
